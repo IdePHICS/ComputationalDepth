@@ -2,12 +2,8 @@
 
 ![Example Figure](Figures/Example.jpg)
 
-<<<<<<< HEAD
-This repository contains the code for the paper "The Computational Advantage of Depth: Learning High-Dimensional Hierarchical Functions with Gradient Descent" [arXiv:2502.13961](https://arxiv.org/abs/2502.13961).
-=======
 This repository contains the code for the paper "The Computational Advantage of Depth: Learning High-Dimensional Hierarchical Functions with Gradient Descent" [arXiv:2502.13961](https://arxiv.org/abs/2502.13961). 
 
->>>>>>> 4f940734e9353f06780f3c59c4fcf4e818b8fecd
 The requirements to run the code are contained in the `requirements.txt` file.  
 
 The code is organized as follows:
