@@ -1,0 +1,37 @@
+# Flag tuning what will be computed #
+FlagOverlapLin: true # true if the linear overlap is computed
+FlagOverlapNonLin: true # true if the non-linear overlap is computed
+FlagTrain2Layer: true # true if the 2-layer network is trained
+
+# Training data dimensionality #
+ds: # list of input sizes
+- 64
+exp_max: 2.2 # maximum exponent in the number of samples probed, i.e. $n_{max} = d^exp_max$
+exp_min: 0.2 # minimum exponent in the number of samples probed, i.e. $n_{min} = d^exp_min$
+num: 15 # number of samples probed
+
+# Regularizations for different methods #
+reg1: 0 # first layer regularization: layerwise
+reg1_setup_2layer: 0.01 # first layer regularization: 2-layer network
+reg1_setup_joint: 0 # first layer regularization: joint training
+reg2: 0 # second layer regularization: layerwise
+reg2_setup_joint: 0.01 # second layer regularization: joint training
+lambda_ridge: 1  # ridge regression: layerwise
+lambda_ridge_setup_kernel: 1 # ridge regression: kernel method
+lambda_ridge_setup_2layer: 1 # ridge regression: 2-layer network
+reg3_setup_joint: 0 # third layer regularization: joint training
+
+# Hyperparameters for the optimization #
+fraction_batch: 0.7 # minibatch size as a fraction of the dataset size
+lr: 1 # learning rate
+coef_iter: 5 # coefficient determining the iteration time 
+delta: 0.1 # coefficient determining the hidden layer size
+p2: 100 # second hidden layer size
+
+# Hierarchical model parameters #
+epsilon: 0.5 # coefficient determining the effective dimension
+k: 1 # number of branches in the  hierarchical target model
+sigma1_code: h2+1h3
+sigma2_code: tanh_coef
+coef: 3 # coefficient in the tanh activation function
+trials: 10
